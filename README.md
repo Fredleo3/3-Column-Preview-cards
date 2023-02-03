@@ -21,12 +21,12 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Screenshot
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](https://github.com/Fredleo3/3-Column-Preview-cards/blob/main/assets/images/screenshot.PNG)
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [3-column preview cards solution](https://fredleo3.github.io/3-Column-Preview-cards/)
 
 ## My process
 
