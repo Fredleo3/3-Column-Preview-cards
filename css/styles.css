@@ -1,0 +1,175 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700
+
+*/
+
+:root{
+    --b-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --white-text: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+html, body{
+    min-height: 100vh;      
+}
+
+body {
+    background-color: var(--very-light-gray);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main{    
+    flex-grow: 1;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 104px;
+}
+
+.card-container{    
+    display: flex;    
+    justify-content: center;
+    align-items: center;    
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media(max-width: 958px){
+    body{
+        overflow: scroll;
+    }
+    .card-container{
+        flex-direction: column;        
+    }
+}
+
+
+
+.card{
+    box-sizing: border-box;
+    align-self: center;
+    justify-self: center;
+    position: relative;   
+    width: 307px;
+    height: 500px;
+    padding: 48px;   
+}
+
+.sedans-card{
+    background-color: var(--b-orange);
+}
+
+.suvs-card{
+    background-color: var(--dark-cyan);
+}
+
+.luxury-card{
+    background-color: var(--very-dark-cyan);
+}
+
+.card-title{   
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.44em;    
+    letter-spacing: 2.3pt;
+    color: var(--white-text);
+    margin: 32px 0px 28px  0px;
+}
+
+.card-paragraph{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.934em;
+    color: var(--white-text);
+    line-height: 1.66em;
+}
+
+.card-cta{
+    position: absolute;
+    bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-button{  
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--very-light-gray);
+    height: 48px;
+    width: 147px;
+    border-radius: 24px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.card-button:hover{
+    color: var(--very-light-gray);
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.card-button-sedans{
+    color: var(--b-orange);
+}
+
+.card-button-suvs{
+    color: var(--dark-cyan);
+}
+
+.card-button-luxury{
+    color: var(--very-dark-cyan);
+}
+
+.attribution { 
+    flex-grow: 0;
+    font-size: 11px; 
+    text-align: center;     
+    margin: 20px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
