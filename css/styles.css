@@ -46,55 +46,52 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 }
 
 html, body{
-    min-height: 100vh;      
+    min-height: 100vh;  
+    background-color: var(--very-light-gray);       
 }
 
-body {
-    background-color: var(--very-light-gray);
-    margin: 0;
-    padding: 0;
+body{
+    margin: 0;  
+    padding: 0; 
+    
+}
+
+main{  
+    flex-grow: 1;  
+    margin: 5.5em 2em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--white-text); 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
-}
-
-main{    
-    flex-grow: 1;
-    position: relative;
-    display: grid;
-    place-items: center;
-    margin-top: 104px;
-}
-
-.card-container{    
-    display: flex;    
     justify-content: center;
-    align-items: center;    
-    border-radius: 10px;
+}
+
+.card-container{
+    display: block;
+    border-radius: 0.8em;
     overflow: hidden;
+    max-width: 18em;
 }
-
-@media(max-width: 958px){
-    body{
-        overflow: scroll;
-    }
-    .card-container{
-        flex-direction: column;        
-    }
-}
-
-
 
 .card{
     box-sizing: border-box;
-    align-self: center;
-    justify-self: center;
-    position: relative;   
-    width: 307px;
-    height: 500px;
-    padding: 48px;   
+    padding: 3em;   
+}
+
+.card-title{
+    margin-top: 0.5em 0 0.5em 0;    
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.6em;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.06em;
+}
+
+.card-paragraph{
+    line-height: 1.8em;  
+    font-size: 0.85em;
+    margin-bottom: 2em;
 }
 
 .sedans-card{
@@ -109,50 +106,28 @@ main{
     background-color: var(--very-dark-cyan);
 }
 
-.card-title{   
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700;
-    font-size: 2.44em;    
-    letter-spacing: 2.3pt;
-    color: var(--white-text);
-    margin: 32px 0px 28px  0px;
+.card-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 0.16em solid white;
+    border-radius: 1.58em;
+    margin: 0;
+    height: 3em;
+    width: 10em;    
+    text-align: center;
+    text-decoration: none;     
+    position: relative;    
 }
 
-.card-paragraph{
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    font-size: 0.934em;
-    color: var(--white-text);
-    line-height: 1.66em;
+.card-cta :hover{
+    background-color:  rgba(0, 0, 0, 0);
+    color: white;
 }
 
-.card-cta{
-    position: absolute;
-    bottom: 48px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-button{  
-    border: 2px solid var(--very-light-gray);
-    background-color: var(--very-light-gray);
-    height: 48px;
-    width: 147px;
-    border-radius: 24px;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-
-.card-button:hover{
-    color: var(--very-light-gray);
-    background-color: rgba(255, 255, 255, 0);
-
-}
-
-.card-button-sedans{
-    color: var(--b-orange);
+.card-button-sedans{    
+    color: var(--b-orange);    
 }
 
 .card-button-suvs{
@@ -163,13 +138,32 @@ main{
     color: var(--very-dark-cyan);
 }
 
-.attribution { 
+.attribution{
     flex-grow: 0;
-    font-size: 11px; 
-    text-align: center;     
-    margin: 20px;
+    margin: 1em 2em;
+    text-align: center;
+    bottom: 2em;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+@media (min-width: 1440px){
+    html, body{
+        overflow: hidden;
+    } 
+    body{
+        display: flex; 
+        flex-direction: column;   
+    }
+    
+    main{
+        margin-top: 10em;
+    } 
+    .card-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        min-width: 20em;      
+    }    
+    .card-container{
+        min-width: 54em;
+    }
 }
