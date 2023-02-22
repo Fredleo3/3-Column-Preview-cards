@@ -122,5 +122,5 @@ Media query - Allow changing the behavior or properties of the element according
 
 ## Acknowledgments
 
-- [MelvinAguilar](https://www.frontendmentor.io/profile/MelvinAguilar) - In the community feedback on Melvin's solution to this challenge, he answers a question  and mentions that he used the extension PerfectPixel. That extension helped me the size of my solution.
+- [MelvinAguilar](https://www.frontendmentor.io/profile/MelvinAguilar) - In the community feedback on Melvin's solution to this challenge, he answers a question  and mentions that he used the extension PerfectPixel. That extension helped me the size of my solution. Edit(In the last update I did not use this extension)
 
